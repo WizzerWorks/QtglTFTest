@@ -112,12 +112,17 @@ void MainWindow::on_actionAbout_triggered()
     about();
 }
 
+void MainWindow::on_actionExit_triggered()
+{
+    this->close();
+}
+
 void MainWindow::on_actionSpecification_triggered()
 {
     if (m_helpPanel == NULL)
     {
         m_helpPanel = new HelpDialog();
-        m_helpPanel->init();
+        m_helpPanel->open();
     }
 
     m_helpPanel->show();

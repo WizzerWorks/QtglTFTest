@@ -55,6 +55,7 @@ class MainWindow : public QMainWindow
     void on_actionOpen_triggered();
     void on_actionAbout_triggered();
     void on_actionSpecification_triggered();
+    void on_actionExit_triggered();
 
   private:
     Ui::MainWindow *m_ui;
