@@ -22,18 +22,27 @@
 // COPYRIGHT_END
 
 // Include Qt header files.
+#include <QFile>
 #include <QFileDialog>
 #include <QTextEdit>
 #include <QTreeWidgetItem>
 #include <QGridLayout>
 #include <QMessageBox>
+#include <QSplitter>
+#include <QHelpContentModel>
+#include <QHelpContentWidget>
+#include <QHelpIndexModel>
+#include <QHelpIndexWidget>
 
 // Include QtglTFTest header files.
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "helpbrowser.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
+    m_helpEngine(NULL),
+    m_helpPanel(NULL),
     m_ui(new Ui::MainWindow)
 {
     m_ui->setupUi(this);
@@ -46,6 +55,10 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
+    if (m_helpEngine != NULL)
+        delete m_helpEngine;
+    if (m_helpPanel != NULL)
+        delete m_helpPanel;
     delete m_ui;
 }
 
@@ -101,4 +114,16 @@ void MainWindow::on_actionAbout_triggered()
 
 void MainWindow::on_actionSpecification_triggered()
 {
+    if (m_helpPanel == NULL)
+    {
+        m_helpPanel = new HelpDialog();
+        m_helpPanel->init();
+    }
+
+    m_helpPanel->show();
+}
+
+void MainWindow::displayHelp(QByteArray help)
+{
+
 }

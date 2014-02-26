@@ -24,9 +24,16 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+// Include the Qt header files.
 #include <QMainWindow>
+#include <QHelpEngine>
+#include <QSplitter>
+
+// Include the QtglTF header files.
 #include "qgltfreader.h"
 #include "qgltfwidget.h"
+
+#include "helpdialog.h"
 
 namespace Ui {
 class MainWindow;
@@ -53,6 +60,10 @@ class MainWindow : public QMainWindow
     Ui::MainWindow *m_ui;
     QglTFReader m_reader;
     QglTFWidget *m_tree;
+    QHelpEngine *m_helpEngine;
+    HelpDialog *m_helpPanel;
+
+    void displayHelp(QByteArray help);
 };
 
 #endif // MAINWINDOW_H
