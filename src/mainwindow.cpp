@@ -34,6 +34,9 @@
 #include <QHelpIndexModel>
 #include <QHelpIndexWidget>
 
+// Include QtglTF header files.
+#include "qgltfvalidator.h"
+
 // Include QtglTFTest header files.
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -102,6 +105,31 @@ void MainWindow::about()
                "the Wizzer Works QtglTF library."));
 }
 
+bool MainWindow::validate()
+{
+    bool status = false;
+
+    if (! m_reader.isOpen())
+    {
+        qDebug("glTF file is not currently open.");
+    } else
+    {
+        // Retrieve the file used to initialize the reader.
+        QFile *file = m_reader.getFile();
+        QFileInfo info(*file);
+
+        // Translate the file path to a char *.
+        QString filepath = info.absoluteFilePath();
+        QByteArray utf8BAString = filepath.toUtf8();
+        const char *glTFFile = utf8BAString.data();
+
+        QglTFValidator validator;
+        status = validator.validate(glTFFile);
+    }
+
+    return status;
+}
+
 void MainWindow::on_actionOpen_triggered()
 {
     open();
@@ -126,6 +154,19 @@ void MainWindow::on_actionSpecification_triggered()
     }
 
     m_helpPanel->show();
+}
+
+void MainWindow::on_actionValidate_triggered()
+{
+    bool status = validate();
+
+    // Todo: display status of validation.
+    if (status != true) {
+        QMessageBox::information(
+            this,
+            tr("QtglTF Test"),
+            tr("Unable to validate glTF file.") );
+    }
 }
 
 void MainWindow::displayHelp(QByteArray help)

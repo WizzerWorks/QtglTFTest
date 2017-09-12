@@ -49,15 +49,17 @@ class MainWindow : public QMainWindow
 
   protected:
     void open();
+    bool validate();
     void about();
 
   private slots:
     void on_actionOpen_triggered();
     void on_actionAbout_triggered();
     void on_actionSpecification_triggered();
+    void on_actionValidate_triggered();
     void on_actionExit_triggered();
 
-  private:
+private:
     Ui::MainWindow *m_ui;
     QglTFReader m_reader;
     QglTFWidget *m_tree;
