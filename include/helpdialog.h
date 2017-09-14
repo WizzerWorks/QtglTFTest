@@ -28,7 +28,12 @@
 #include <QSplitter>
 #include <QHelpEngine>
 
+// Todo: need a better way to find help file (based on environment var).
+#ifdef Q_OS_WIN
 #define QTGLTFTEST_HELP_COLLECTION "C:\\Users\\msm\\tmp\\QtglTFTest.qhc"
+#else
+#define QTGLTFTEST_HELP_COLLECTION "/home/msm/tmp/QtglTFTest.qhc"
+#endif
 
 class HelpDialog : public QSplitter
 {

@@ -44,9 +44,10 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
+    m_ui(new Ui::MainWindow),
     m_helpEngine(NULL),
-    m_helpPanel(NULL),
-    m_ui(new Ui::MainWindow)
+    m_helpPanel(NULL)
+
 {
     m_ui->setupUi(this);
 
