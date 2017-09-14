@@ -1,36 +1,37 @@
 {
-    "$schema" : "http://json-schema.org/draft-03/schema",
+    "$schema" : "http://json-schema.org/draft-04/schema",
     "title" : "bufferView",
     "type" : "object",
-    "description" : "Represents a view of a buffer for indexing and manipulation",
+    "description" : "A view into a buffer generally representing a subset of the buffer.",
+    "allOf" : [ { "$ref" : "glTFChildOfRootProperty.schema.json" } ],
     "properties" : {
+        "name" : {},
+        "extensions" : {},
+        "extras" : {},
         "buffer" : {
-            "type" : "string",
-            "description" : "The id (JSON property name) of the buffer referenced by this view.",
-            "required" : true
+            "allOf" : [ { "$ref" : "glTFid.schema.json" } ],
+            "description" : "The ID of the buffer."
         },
         "byteOffset" : {
-            "type" : "number",
-            "description" : "The offset into the buffer, in bytes.",
+            "type" : "integer",
+            "description" : "The offset into the buffer in bytes.",
+            "minimum" : 0
+        },
+        "byteLength" : {
+            "type" : "integer",
+            "description" : "The length of the bufferView in bytes.",
             "minimum" : 0,
             "default" : 0
         },
-        "byteLength" : {
-            "type" : "number",
-            "description" : "The length of the buffer view, in bytes.",
-            "minimum" : 0,
-            "required" : true
-        },
         "target" : {
-            "type" : "string",
-            "description" : "Required target type for bindBuffer(), must be ARRAY_BUFFER or ELEMENT_ARRAY_BUFFER",
-            "enum" : ["ARRAY_BUFFER", "ELEMENT_ARRAY_BUFFER"],
-            "required" : true
-        },
-        "extra" : {
-            "type" : "any",
-            "description" : "Optional application-specific data."
+            "type" : "integer",
+            "description" : "The target that the WebGL buffer should be bound to.",
+            "enum" : [34962, 34963],
+            "gltf_enumNames" : ["ARRAY_BUFFER", "ELEMENT_ARRAY_BUFFER"],
+            "gltf_detailedDescription" : "The target that the WebGL buffer should be bound to.  All valid values correspond to WebGL enums.  When this is not provided, the bufferView contains animation or skin data.",
+            "gltf_webgl" : "`bindBuffer()`"
         }
     },
-    "additionalProperties" : false
+    "additionalProperties" : false,
+    "required": ["buffer", "byteOffset"]
 }

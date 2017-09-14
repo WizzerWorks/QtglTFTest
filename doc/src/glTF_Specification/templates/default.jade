@@ -24,16 +24,19 @@ html
             dl
               each value, key in property
                 dt
-                  "#{key}":
-                dd= value
+                  | "#{key}":
+                if value == null
+                  dd
+                    span.null
+                      | null
+                else
+                  dd= value
       span.container }
       footer
-        p Built with 
+        p Built with
           a(href='https://www.github.com/mattyod/matic/') Matic.js
-          |&nbsp;using 
-          a(href='https://www.github.com/WizzerWorks/QtglTF/') glTF Specification
-    mixin addJQuery
-      block
-    +addJQuery()
+          |&nbsp;using
+          a(href='https://www.github.com/mattyod/matic-very-simple-example/') a simple example
+
       script(src='js/jquery.js')
       script(src='js/schema.js')

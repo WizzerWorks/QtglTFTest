@@ -1,20 +1,35 @@
 {
-    "$schema" : "http://json-schema.org/draft-03/schema",
+    "$schema" : "http://json-schema.org/draft-04/schema",
     "title" : "asset",
     "type" : "object",
-    "description" : "Asset-management information for this model.",
+    "description" : "Metadata about the glTF asset.",
+    "allOf" : [ { "$ref" : "glTFProperty.schema.json" } ],
     "properties" : {
+        "extensions" : {},
+        "extras" : {},
         "copyright" : {
             "type" : "string",
-            "description" : "A copyright message suitable for display to credit the model author."
+            "description" : "A copyright message suitable for display to credit the content creator."
         },
-        "geographicLocation" : {
-            "$ref" : "geographicLocation.schema.json"
+        "generator" : {
+            "type" : "string",
+            "description" : "Tool that generated this glTF model.  Useful for debugging."
         },
-        "extra" : {
-            "type" : "any",
-            "description" : "Optional application-specific data."
+        "premultipliedAlpha" : {
+            "type" : "boolean",
+            "description" : "Specifies if the shaders were generated with premultiplied alpha.",
+            "default" : false,
+            "gltf_webgl" : "`getContext()` with premultipliedAlpha"
+        },
+        "profile" : {
+            "allOf" : [ { "$ref" : "asset.profile.schema.json" } ],
+            "default" : {}
+        },
+        "version" : {
+            "type" : "string",
+            "description" : "The glTF version."
         }
     },
-    "additionalProperties" : false
+    "additionalProperties" : false,
+    "required": ["version"]
 }
