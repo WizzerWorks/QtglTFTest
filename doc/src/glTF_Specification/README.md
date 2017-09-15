@@ -1,9 +1,9 @@
-# matic-very-simple-example
+# matic build environment for glTF 1.0 Schema
 
-A very simple example project for Matic using one Jade template and one schema file.
+This project uses Matic and a Jade template for generating HTML documentation for glTF Schema files.
 
 ## Dependencies
-To build this example you will need to install the following two node packages:
+To build this documentation you will need to install the following two node packages:
 
 [Matic](https://github.com/mattyod/matic)
 
@@ -11,18 +11,9 @@ and
 
 [Jade](https://github.com/visionmedia/jade)
 
-## Installation
-Then you can download this repository with
+## Building the documentation
+Details for building the glTF Schema documentation are provided on the [QtglTFTest wiki](https://github.com/WizzerWorks/QtglTFTest/wiki).
 
-    git clone https://github.com/mattyod/matic-very-simple-example.git
+After following these instructions, you should now have a new folder called 'web' within the sample project. Within this should be a file called gltf.html, open this with a browser and view the generated documentation.
 
-## Building the example docs
-Then simply navigate into the newly cloned example folder and run:
-
-    matic
-
-You should now have a new folder called 'web' within the sample project. Within this should be a file called very-simple-example.html, open this with a browser and view the generated documentation.
-
-Please note this particular example is built to work as a simple local flat file system and so paths are not set as they would be if files were hosted on a server. That means you can just double click the generated HTML file and view it in your default browser.
-
-[An example of the output](http://mattyod.github.com/matic-very-simple-example/).
+Please note this documentation is built to work as a simple local flat file system and so paths are not set as they would be if files were hosted on a server. That means you can just double click the generated HTML file and view it in your default browser.
