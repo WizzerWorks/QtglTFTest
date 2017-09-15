@@ -3,13 +3,10 @@
 This project uses Matic and a Jade template for generating HTML documentation for glTF Schema files.
 
 ## Dependencies
-To build this documentation you will need to install the following two node packages:
+To build this documentation you will need to install the following two Node.js packages:
 
-[Matic](https://github.com/mattyod/matic)
-
-and
-
-[Jade](https://github.com/visionmedia/jade)
+* [Matic](https://github.com/mattyod/matic)
+* [Jade](https://github.com/visionmedia/jade)
 
 ## Building the documentation
 Details for building the glTF Schema documentation are provided on the [QtglTFTest wiki](https://github.com/WizzerWorks/QtglTFTest/wiki).
