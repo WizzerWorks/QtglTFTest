@@ -34,13 +34,13 @@ win32 {
 
 unix {
     CONFIG(debug, debug|release) {
-        LIBS += -L$$PWD/../build-QtglTF-Desktop_Qt_5_8_0_GCC_64bit-Debug -lQtglTF
-        INCLUDEPATH += $$PWD/../build-QtglTF-Desktop_Qt_5_8_0_GCC_64bit-Debug
+        LIBS += -L$$PWD/../build-QtglTF-Desktop_Qt_5_13_1_GCC_64bit-Debug -lQtglTF
+        INCLUDEPATH += $$PWD/../build-QtglTF-Desktop_Qt_5_13_1_GCC_64bit-Debug
         DEPENDPATH += $$PWD/../build-QtglTF-Desktop_Qt_5_8_0_GCC_64bit-Debug
     } else {
-        LIBS += -L$$PWD/../build-QtglTF-Desktop_Qt_5_8_0_GCC_64bit-Release -lQtglTF
-        INCLUDEPATH += $$PWD/../build-QtglTF-Desktop_Qt_5_8_0_GCC_64bit-Release
-        DEPENDPATH += $$PWD/../build-QtglTF-Desktop_Qt_5_8_0_GCC_64bit-Release
+        LIBS += -L$$PWD/../build-QtglTF-Desktop_Qt_5_13_1_GCC_64bit-Release -lQtglTF
+        INCLUDEPATH += $$PWD/../build-QtglTF-Desktop_Qt_5_13_1_GCC_64bit-Release
+        DEPENDPATH += $$PWD/../build-QtglTF-Desktop_Qt_5_13_1_GCC_64bit-Release
     }
 }
 
