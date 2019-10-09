@@ -100,7 +100,7 @@ void MainWindow::about()
 {
     QMessageBox::about(this, tr("About glTF Test"),
             tr("<h2>QtglTFTest 0.1</h2>"
-               "<p>Copyright &copy; 2014-2017 Wizzer Works"
+               "<p>Copyright &copy; 2014-2019 Wizzer Works"
                "<p>Licensing: The MIT License (MIT)</p>"
                "<p>QtglTFTest is used to exercise "
                "the Wizzer Works QtglTF library."));
