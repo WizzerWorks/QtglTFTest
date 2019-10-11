@@ -32,7 +32,7 @@
 #include "helpbrowser.h"
 
 HelpDialog::HelpDialog(QWidget *parent)
-  : QSplitter(parent), m_width(300), m_height(500), m_helpEngine(NULL)
+  : QSplitter(parent), m_width(300), m_height(500), m_helpEngine(nullptr)
 {
     setMinimumWidth(m_width);
     setMinimumHeight(m_height);
@@ -40,7 +40,7 @@ HelpDialog::HelpDialog(QWidget *parent)
 
 HelpDialog::~HelpDialog()
 {
-    if (m_helpEngine != NULL)
+    if (m_helpEngine != nullptr)
         delete m_helpEngine;
 }
 
@@ -51,7 +51,7 @@ void HelpDialog::open()
     HelpBrowser *helpBrowser;
 
     // Create the help engine if necessary.
-    if (m_helpEngine == NULL)
+    if (m_helpEngine == nullptr)
     {
         QFile *file = new QFile(QTGLTFTEST_HELP_COLLECTION);
         if (file->exists()) {
@@ -112,7 +112,7 @@ void HelpDialog::close()
     m_height = size.height();
 }
 
-void HelpDialog::closeEvent(QCloseEvent *event)
+void HelpDialog::closeEvent(QCloseEvent * /*event*/)
 {
     //qDebug() << "Close event signaled.";
     close();

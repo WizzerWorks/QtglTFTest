@@ -45,8 +45,8 @@
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     m_ui(new Ui::MainWindow),
-    m_helpEngine(NULL),
-    m_helpPanel(NULL)
+    m_helpEngine(nullptr),
+    m_helpPanel(nullptr)
 
 {
     m_ui->setupUi(this);
@@ -59,9 +59,9 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
-    if (m_helpEngine != NULL)
+    if (m_helpEngine != nullptr)
         delete m_helpEngine;
-    if (m_helpPanel != NULL)
+    if (m_helpPanel != nullptr)
         delete m_helpPanel;
     delete m_ui;
 }
@@ -148,7 +148,7 @@ void MainWindow::on_actionExit_triggered()
 
 void MainWindow::on_actionSpecification_triggered()
 {
-    if (m_helpPanel == NULL)
+    if (m_helpPanel == nullptr)
     {
         m_helpPanel = new HelpDialog();
         m_helpPanel->open();
@@ -170,7 +170,7 @@ void MainWindow::on_actionValidate_triggered()
     }
 }
 
-void MainWindow::displayHelp(QByteArray help)
+void MainWindow::displayHelp(QByteArray /*help*/)
 {
-
+    // ToDo: Display help here.
 }
