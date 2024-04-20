@@ -100,7 +100,7 @@ void MainWindow::about()
 {
     QMessageBox::about(this, tr("About glTF Test"),
             tr("<h2>QtglTFTest 0.1</h2>"
-               "<p>Copyright &copy; 2014-2019 Wizzer Works"
+               "<p>Copyright &copy; 2014-2024 Wizzer Works"
                "<p>Licensing: The MIT License (MIT)</p>"
                "<p>QtglTFTest is used to exercise "
                "the Wizzer Works QtglTF library."));
@@ -148,13 +148,16 @@ void MainWindow::on_actionExit_triggered()
 
 void MainWindow::on_actionSpecification_triggered()
 {
+    bool status;
+
     if (m_helpPanel == nullptr)
     {
         m_helpPanel = new HelpDialog();
-        m_helpPanel->open();
+        status = m_helpPanel->open();
     }
 
-    m_helpPanel->show();
+    if (status)
+        m_helpPanel->show();
 }
 
 void MainWindow::on_actionValidate_triggered()

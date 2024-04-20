@@ -40,7 +40,6 @@
             </section>
         </toc>
         <keywords>
-            <keyword name="glTF" ref="./glTF.html"/>
             <keyword name="asset" ref="./asset.html"/>
             <keyword name="attribute" ref="./attribute.html"/>
             <keyword name="buffer" ref="./buffer.html"/>

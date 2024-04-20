@@ -43,7 +43,7 @@ class HelpDialog : public QSplitter
     HelpDialog(QWidget *parent = 0);
     ~HelpDialog();
 
-    void open();
+    bool open();
     void close();
     void show();
 

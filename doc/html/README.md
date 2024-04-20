@@ -26,7 +26,7 @@ where <qt_installation_dir is something like C:\Users\msm\bin\Qt5.0.2\5.0.2\msvc
 
 or, on Linux, do
 
-qcollectiongenerator QtglTFTest.qhcp -o QtglTFTest.qhc
+qhelpgenerator QtglTFTest.qhcp -o QtglTFTest.qhc
 
 Copy Generated Files
 ===================+

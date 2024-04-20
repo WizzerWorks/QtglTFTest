@@ -44,11 +44,12 @@ HelpDialog::~HelpDialog()
         delete m_helpEngine;
 }
 
-void HelpDialog::open()
+bool HelpDialog::open()
 {
     QHelpContentModel *contentModel;
     QHelpContentWidget *contentWidget;
     HelpBrowser *helpBrowser;
+    int retValue = true;
 
     // Create the help engine if necessary.
     if (m_helpEngine == nullptr)
@@ -100,8 +101,11 @@ void HelpDialog::open()
             msg.setText(tr("Unable to open help file."));
             msg.setInformativeText(file->fileName());
             msg.exec();
+            retValue = false;
         }
     }
+
+    return retValue;
 }
 
 void HelpDialog::close()
