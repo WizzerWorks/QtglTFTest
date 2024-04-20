@@ -12,58 +12,58 @@
         <filterAttribute>glTF</filterAttribute>
         <filterAttribute>1.0</filterAttribute>
         <toc>
-            <section title="glTF Specification" ref="./index.html">
-                <section title="asset" ref="./asset.html"/>
-                <section title="attribute" ref="./attribute.html"/>
-                <section title="buffer" ref="./buffer.html"/>
-                <section title="bufferView" ref="./bufferView.html"/>
-                <section title="camera" ref="./camera.html"/>
-                <section title="geographicLocation" ref="./geographicLocation.html"/>
-                <section title="glTF" ref="./glTF.html"/>
-                <section title="image" ref="./image.html"/>
-                <section title="indices" ref="./indices.html"/>
-                <section title="material" ref="./material.html"/>
-                <section title="mesh" ref="./mesh.html"/>
-                <section title="meshAttribute" ref="./meshAttribute.html"/>
-                <section title="node" ref="./node.html"/>
-                <section title="orthographic" ref="./orthographic.html"/>
-                <section title="parameters" ref="./parameters.html"/>
-                <section title="pass" ref="./pass.html"/>
-                <section title="perspective" ref="./perspective.html"/>
-                <section title="primitive" ref="./primitive.html"/>
-                <section title="program" ref="./program.html"/>
-                <section title="semantics" ref="./semantics.html"/>
-                <section title="shader" ref="./shader.html"/>
-                <section title="states" ref="./states.html"/>
-                <section title="technique" ref="./technique.html"/>
-                <section title="uniform" ref="./uniform.html"/>
+            <section title="glTF Specification" ref="index.html">
+                <section title="asset" ref="asset.html"/>
+                <section title="attribute" ref="attribute.html"/>
+                <section title="buffer" ref="buffer.html"/>
+                <section title="bufferView" ref="bufferView.html"/>
+                <section title="camera" ref="camera.html"/>
+                <section title="geographicLocation" ref="geographicLocation.html"/>
+                <section title="glTF" ref="glTF.html"/>
+                <section title="image" ref="mage.html"/>
+                <section title="indices" ref="indices.html"/>
+                <section title="material" ref="material.html"/>
+                <section title="mesh" ref="mesh.html"/>
+                <section title="meshAttribute" ref="meshAttribute.html"/>
+                <section title="node" ref="node.html"/>
+                <section title="orthographic" ref="orthographic.html"/>
+                <section title="parameters" ref="parameters.html"/>
+                <section title="pass" ref="pass.html"/>
+                <section title="perspective" ref="perspective.html"/>
+                <section title="primitive" ref="primitive.html"/>
+                <section title="program" ref="program.html"/>
+                <section title="semantics" ref="semantics.html"/>
+                <section title="shader" ref="shader.html"/>
+                <section title="states" ref="states.html"/>
+                <section title="technique" ref="technique.html"/>
+                <section title="uniform" ref="uniform.html"/>
             </section>
         </toc>
         <keywords>
-            <keyword name="asset" ref="./asset.html"/>
-            <keyword name="attribute" ref="./attribute.html"/>
-            <keyword name="buffer" ref="./buffer.html"/>
-            <keyword name="bufferView" ref="./bufferView.html"/>
-            <keyword name="camera" ref="./camera.html"/>
-            <keyword name="geographicLocation" ref="./geographicLocation.html"/>
-            <keyword name="glTF" ref="./glTF.html"/>
-            <keyword name="image" ref="./image.html"/>
-            <keyword name="indices" ref="./indices.html"/>
-            <keyword name="material" ref="./material.html"/>
-            <keyword name="mesh" ref="./mesh.html"/>
-            <keyword name="meshAttribute" ref="./meshAttribute.html"/>
-            <keyword name="node" ref="./node.html"/>
-            <keyword name="orthographic" ref="./orthographic.html"/>
-            <keyword name="parameters" ref="./parameters.html"/>
-            <keyword name="pass" ref="./pass.html"/>
-            <keyword name="perspective" ref="./perspective.html"/>
-            <keyword name="primitive" ref="./primitive.html"/>
-            <keyword name="program" ref="./program.html"/>
-            <keyword name="semantics" ref="./semantics.html"/>
-            <keyword name="shader" ref="./shader.html"/>
-            <keyword name="states" ref="./states.html"/>
-            <keyword name="technique" ref="./technique.html"/>
-            <keyword name="uniform" ref="./uniform.html"/>
+            <keyword name="asset" ref="asset.html"/>
+            <keyword name="attribute" ref="attribute.html"/>
+            <keyword name="buffer" ref="buffer.html"/>
+            <keyword name="bufferView" ref="bufferView.html"/>
+            <keyword name="camera" ref="camera.html"/>
+            <keyword name="geographicLocation" ref="geographicLocation.html"/>
+            <keyword name="glTF" ref="glTF.html"/>
+            <keyword name="image" ref="image.html"/>
+            <keyword name="indices" ref="indices.html"/>
+            <keyword name="material" ref="material.html"/>
+            <keyword name="mesh" ref="mesh.html"/>
+            <keyword name="meshAttribute" ref="meshAttribute.html"/>
+            <keyword name="node" ref="node.html"/>
+            <keyword name="orthographic" ref="orthographic.html"/>
+            <keyword name="parameters" ref="parameters.html"/>
+            <keyword name="pass" ref="pass.html"/>
+            <keyword name="perspective" ref="perspective.html"/>
+            <keyword name="primitive" ref="primitive.html"/>
+            <keyword name="program" ref="program.html"/>
+            <keyword name="semantics" ref="semantics.html"/>
+            <keyword name="shader" ref="shader.html"/>
+            <keyword name="states" ref="states.html"/>
+            <keyword name="technique" ref="technique.html"/>
+            <keyword name="uniform" ref="uniform.html"/>
         </keywords>
         <files>
             <file>css/screen.css</file>
