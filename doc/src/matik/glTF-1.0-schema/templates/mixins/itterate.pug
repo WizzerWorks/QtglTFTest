@@ -1,0 +1,29 @@
+include ./array
+include ./string
+include ./required
+
+mixin itterate(val, key, obj)
+  if Array.isArray(val) && typeof val[0] !== 'object'
+    dt
+      +required(val, key, obj)
+      | "#{key}":
+    dd
+      +array(val)
+  else if typeof val === 'object' && val !== null
+    dt.parent
+      +required(val, key, obj)
+      | "#{key}":
+    dd.new-block
+      dl
+        each item, name in val
+          if Array.isArray(val)
+            +itterate(item, item.title, obj)
+          else
+            - var schema = key.match(/^(properties)|(patternProperties)|(items)$/) ? obj : val
+            +itterate(item, name, schema)
+  else
+    dt
+      +required(val, key, obj)
+      | "#{key}":
+    dd
+      +string(val)
