@@ -148,7 +148,7 @@ void MainWindow::on_actionExit_triggered()
 
 void MainWindow::on_actionSpecification_triggered()
 {
-    bool status;
+    bool status = true;
 
     if (m_helpPanel == nullptr)
     {
