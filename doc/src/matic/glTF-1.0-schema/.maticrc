@@ -1,0 +1,13 @@
+{
+  "assets": ["js", "css"],
+  "index": {
+    "schemas": true
+  },
+  "templates": {
+    "folder": true,
+    "path": "templates",
+    "file": "default",
+    "lib": "pug",
+    "suffix": "pug"
+  }
+}
