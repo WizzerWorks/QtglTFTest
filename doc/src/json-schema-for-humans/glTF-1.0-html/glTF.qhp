@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>wizzerworks.com.qtgltftest.1.0</namespace>
+    <virtualFolder>doc</virtualFolder>
+    <customFilter name="QtglTFTest 1.0">
+        <filterAttribute>QtglTFTest</filterAttribute>
+        <filterAttribute>glTF</filterAttribute>
+        <filterAttribute>1.0</filterAttribute>
+    </customFilter>
+    <filterSection>
+        <filterAttribute>QtglTFTest</filterAttribute>
+        <filterAttribute>glTF</filterAttribute>
+        <filterAttribute>1.0</filterAttribute>
+        <toc>
+            <section title="glTF Specification" ref="index.html">
+                <section title="accesor.schema" ref="accessor.schema.html"/>
+                <section title="animation.channel.schema" ref="animation.channel.schema.html"/>
+                <section title="animation.channel.target.schema" ref="animation.channel.target.schema.html"/>
+                <section title="animation.parameter.schema" ref="animation.parameter.schema.html"/>
+                <section title="animation.sampler.schema" ref="animation.sampler.schema.html"/>
+                <section title="animation.schema" ref="animation.schema.html"/>
+                <section title="arrayValues.schema" ref="arrayValues.schema.html"/>
+                <section title="asset.profile.schema" ref="asset.profile.schema.html"/>
+                <section title="asset.schema" ref="asset.schema.html"/>
+                <section title="buffer.schema" ref="buffer.schema.html"/>
+                <section title="bufferView.schema" ref="bufferView.schema.html"/>
+                <section title="camera.orthographic.schema" ref="camera.orthographic.schema.html"/>
+                <section title="camera.perspective.schema" ref="camera.perspective.schema.html"/>
+                <section title="camera.schema" ref="camera.schema.html"/>
+                <section title="extension.schema" ref="extension.schema.html"/>
+		<section title="extras.schema" ref="extras.schema.html"/>
+                <section title="glTFChildOfRootProperty.schema" ref="glTFChildOfRootProperty.schema.html"/>
+                <section title="glTFid.schema" ref="glTFid.schema.html"/>
+                <section title="glTFProperty.schema" ref="glTFProperty.schema.html"/>
+                <section title="glTF.schema" ref="glTF.schema.html"/>
+                <section title="image.schema" ref="image.schema.html"/>
+                <section title="material.schema" ref="material.schema.html"/>
+                <section title="material.values.schema" ref="material.values.schema.html"/>
+                <section title="mesh.primitive.attribute.schema" ref="mesh.primitive.attribute.schema.html"/>
+                <section title="mesh.primitive.schema" ref="mesh.primitive.schema.html"/>
+                <section title="mesh.schema" ref="mesh.schema.html"/>
+                <section title="node.schema" ref="node.schema html"/>
+                <section title="program.schema" ref="program.schema.html"/>
+                <section title="sampler.schema" ref="sampler.schema.html"/>
+                <section title="scene.schema" ref="scene.schema.html"/>
+                <section title="shader.schema" ref="shader.schema.html"/>
+                <section title="skin.schema" ref="skin.schema.html"/>
+                <section title="technique.attribute.schema" ref="technique.attribute.schema.html"/>
+                <section title="technique.parameters.schema" ref="technique.parameters.schema.html"/>
+                <section title="technique.schema" ref="technique.schema.html"/>
+                <section title="technique.states.functions.schema" ref="technique.states.functions.schema.html"/>
+                <section title="technique.states.schema" ref="technique.states.schema.html"/>
+                <section title="technique.uniform.schema" ref="technique.uniform.schema.html"/>
+                <section title="texture.schema" ref="texture.schema.html"/>
+            </section>
+        </toc>
+        <keywords>
+            <keyword name="accesor" ref="accessor.schema.html"/>
+            <keyword name="animation.channel" ref="animation.channel.schema.html"/>
+            <keyword name="animation.channel.target" ref="animation.channel.target.schema.html"/>
+            <keyword name="animation.parameter" ref="animation.parameter.schema.html"/>
+            <keyword name="animation.sampler" ref="animation.sampler.schema.html"/>
+            <keyword name="animation" ref="animation.schema.html"/>
+            <keyword name="arrayValues" ref="arrayValues.schema.html"/>
+            <keyword name="asset.profile" ref="asset.profile.schema.html"/>
+            <keyword name="asset" ref="asset.schema.html"/>
+            <keyword name="buffer" ref="buffer.schema.html"/>
+            <keyword name="bufferView" ref="bufferView.schema.html"/>
+            <keyword name="camera.orthographic" ref="camera.orthographic.schema.html"/>
+            <keyword name="camera.perspective" ref="camera.perspective.schema.html"/>
+            <keyword name="camera" ref="camera.schema.html"/>
+            <keyword name="extension" ref="extension.shema.html"/>
+            <keyword name="extras" ref="extras.schema.html"/>
+            <keyword name="glTFChildOfRootProperty" ref="glTFChildOfRootProperty.schema.html"/>
+            <keyword name="glTFid" ref="glTFid.schema.html"/>
+            <keyword name="glTFProperty" ref="glTFProperty.schema.html"/>
+            <keyword name="glTF" ref="glTF.schema.html"/>
+            <keyword name="image" ref="image..schema.html"/>
+            <keyword name="material" ref="material.schema.html"/>
+            <keyword name="material.values" ref="material.values.schema.html"/>
+            <keyword name="mesh.primitive.attribute" ref="mesh.primitive.attribute.schema.html"/>
+            <keyword name="mesh.primitive" ref="mesh.primitive.schema.html"/>
+            <keyword name="mesh" ref="mesh.schema.html"/>
+            <keyword name="node" ref="node.schema.html"/>
+            <keyword name="program" ref="program.schema.html"/>
+            <keyword name="sampler" ref="sampler.schema.html"/>
+            <keyword name="scene" ref="scene.schema.html"/>
+            <keyword name="shader" ref="shader.schema.html"/>
+            <keyword name="skin" ref="skin.schema.html"/>
+            <keyword name="technique.attribute" ref="technique.attribute.schema.html"/>
+            <keyword name="technique.parameters" ref="technique.parameters.schema.html"/>
+            <keyword name="technique" ref="technique.html"/>
+            <keyword name="technique.states.functions" ref="technique.states.functions.schema.html"/>
+            <keyword name="technique.states" ref="technique.states.schema.html"/>
+            <keyword name="technique.uniform" ref="technique.uniform.schema.html"/>
+            <keyword name="texture" ref="texture.schema.html"/>
+        </keywords>
+        <files>
+            <file>schema_doc.css</file>
+            <file>schema_doc.min.js</file>
+            <file>*.html</file>
+        </files>
+    </filterSection>
+</QtHelpProject>
