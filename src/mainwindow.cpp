@@ -157,7 +157,13 @@ void MainWindow::on_actionSpecification_triggered()
     }
 
     if (status)
+    {
         m_helpPanel->show();
+    } else {
+        // open failed, clean up
+        if (m_helpPanel != nullptr) delete m_helpPanel;
+        m_helpPanel = nullptr;
+    }
 }
 
 void MainWindow::on_actionValidate_triggered()
